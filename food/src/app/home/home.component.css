@@ -1,0 +1,42 @@
+.food-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Wrap items to new rows */
+    justify-content: center; /* Center items horizontally */
+}
+
+.food-list li {
+    display: block;
+    margin: 10px;
+    flex-basis: 20%; /* Each item takes 20% width for 5 items in a row */
+    text-align: center;
+}
+
+.food-list li a {
+    display: block;
+    height: 20rem;
+    width: 20rem;
+    border: 1px solid whitesmoke;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    flex-direction: column;
+    overflow: hidden;
+    color: #e72929;
+}
+li a:hover{
+    opacity: 0.8;
+}
+.content{
+    padding: .5rem 1rem;
+    position: relative;
+}
+.favourite{
+    top: .5rem;
+    left: 1rem;
+    font-size: 1.2rem;
+    color:red;
+}
+.favourite.not{
+    color:grey;
+}
